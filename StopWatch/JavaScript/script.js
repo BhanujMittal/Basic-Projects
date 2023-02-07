@@ -1,9 +1,9 @@
 let stopwatch = document.getElementById('stopwatch');
 let startButton = document.getElementById('start-btn')
 let timeoutId = null;
-let ms = 0;
+let ms = 0
 let s = 0
-let m = 0;
+let m = 0
 
 function start(flag) {
     if(flag) {
