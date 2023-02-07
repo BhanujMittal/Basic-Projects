@@ -33,6 +33,7 @@ body {
   background-color: black;
   width: 150px;
   height: 150px;
+  border-radius: 50px;
 }
 
 input {
