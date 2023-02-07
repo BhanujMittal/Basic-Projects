@@ -1,3 +1,4 @@
+// this functin is used to clear all input
 function Reload() {
     location.reload()
     document.getElementById('b1').value = "";
@@ -11,6 +12,7 @@ function Reload() {
     document.getElementById('b9').value = "";
 }
 
+// main funciton which declares the winner
 function myFunc() {
     var b1, b2, b3, b4, b5, b6, b7, b8, b9;
     b1 = document.getElementsByClassName('box')[0].value
@@ -215,6 +217,7 @@ function myFunc() {
         Reload()
     }
 
+    // this displays when the match is tied
     else if ((b1 == 'X' || b1 == '0') && (b2 == 'X'
         || b2 == '0') && (b3 == 'X' || b3 == '0') &&
         (b4 == 'X' || b4 == '0') && (b5 == 'X' ||
@@ -227,6 +230,7 @@ function myFunc() {
         Reload()
     }
 
+    // it shows the player turn
     else {
         if (flag == 1) {
             document.getElementById('print').innerHTML = "Player X Turn"
@@ -238,6 +242,7 @@ function myFunc() {
 
 let flag = 1;
 
+// this works as both players turn one by one.
 function myfunc_2() {
     if (flag == 1) {
         document.getElementById('b1').value = 'X'
