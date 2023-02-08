@@ -13,26 +13,34 @@ body {
     height: 100vh;
 }
 
+body #h-header {
+    color: #fff;
+    position: absolute;
+    top: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
 .container {
     display: flex;
     height: 50vh; 
     gap: 1rem;   
 }
 
-h1 {
+h2 {
     visibility: hidden;
 }
 
 .box-1 {
     background: url('https://media.cntraveler.com/photos/5654ac905e7aeb7a6e217952/master/pass/milford-sound-new-zealand-02-cr-getty.jpg') no-repeat center center/cover;
     height: 50vh;
-    width: 2vw;
+    width: 30px;
     border-radius: 10px;
     position: relative;
     cursor: pointer;
 }
 
-h1 {
+h2 {
     font-size: 1rem;
     position: absolute;
     bottom: 0px;
@@ -42,7 +50,7 @@ h1 {
 .box-2 {
     background: url('https://images.huffingtonpost.com/2016-04-01-1459522223-1796976-Forests_3.jpeg') no-repeat center center/cover;
     height: 50vh;
-    width: 2vw;
+    width: 30px;
     border-radius: 10px;
     position: relative;
     cursor: pointer;
@@ -51,35 +59,45 @@ h1 {
 .box-3 {
     background: url('https://www.tripsavvy.com/thmb/BF3Rs9IiZjNuiBN296P3CrK3Bok=/5730x3820/filters:fill(auto,1)/travel-destination--french-polynesia-505610634-a8272a44619d4be1a725dd622a77edff.jpg') no-repeat center center/cover;
     height: 50vh;
-    width: 2vw;
+    width: 30px;
     border-radius: 10px;
     position: relative;
     cursor: pointer;
 }
 
 .box-1.active {
-    width: 15vw;
+    width: 200px;
     transition: all 1s ease-in;
 }
 
 .box-2.active {
-    width: 15vw;
+    width: 200px;
     transition: all 1s ease-in;
 }
 
 .box-3.active {
-    width: 15vw;
+    width: 200px;
     transition: all 1s ease-in;
 }
 
-.box-1.active h1 {
+.box-1.active h2 {
     visibility: visible;
 }
 
-.box-2.active h1 {
+.box-2.active h2 {
     visibility: visible;
 }
 
-.box-3.active h1 {
+.box-3.active h2 {
     visibility: visible;
+}
+
+@media screen and (max-width: 475px) {
+    .box-1.active, .box-2.active, .box-3.active {
+        width: 165px;
+    }
+
+    body #h-header {
+        font-size: 1.5rem;
+    }
 }

@@ -62,3 +62,20 @@ input {
   color: #30def4;
   padding: .5rem 1rem;
 }
+
+@media screen and (max-width: 470px) {
+  .container {
+    grid-template-columns: 75px 75px 75px;
+  }
+
+  .container .box {
+    width: 75px;
+    height: 75px;
+    border-radius: 30px;
+    text-align: center;
+  }
+
+  input {
+    font-size: 3rem;
+  }
+}
