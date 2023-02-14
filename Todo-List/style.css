@@ -40,8 +40,8 @@ h1::before {
     font-size: 1.2rem;
 }
 
-#button, #sort {
-    padding: .5rem 1rem;
+#button, #sort, #clear {
+    padding: .4rem 1rem;
     border-radius: 10px;
     cursor: pointer;
     margin-left: 5px;
@@ -189,4 +189,28 @@ li::first-letter {
     background-color: inherit;
     cursor: pointer;
     font-weight: 700;
+}
+
+@media screen and (max-width: 670px) {
+    .container {
+        flex-direction: column;
+    }
+
+    #input {
+        width: 90vw;
+        margin: 10px 1rem;
+    }
+
+    .button {
+        flex-direction: row;
+        gap: 0px;
+    }
+
+    #todo {
+        margin: 1rem auto;
+    }
+
+    .noteElement {
+        width: 80vw;
+    }
 }

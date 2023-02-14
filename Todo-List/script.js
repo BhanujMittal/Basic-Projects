@@ -104,3 +104,7 @@ function sortNote() {
         todo.appendChild(itemsArr[i]);
     }
 }
+
+function clearNote() {
+    todo.innerHTML = '' 
+}
