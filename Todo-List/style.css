@@ -1,9 +1,11 @@
+/* CSS Resets */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* body section */
 body {
     background-color: black;
     color: #3070f4;
@@ -190,6 +192,8 @@ li::first-letter {
     cursor: pointer;
     font-weight: 700;
 }
+
+/* media queries to adjust responsiveness */
 
 @media screen and (max-width: 670px) {
     .container {

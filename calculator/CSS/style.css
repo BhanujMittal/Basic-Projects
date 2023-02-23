@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* body section */
 body {
     display: flex;
     flex-direction: column;

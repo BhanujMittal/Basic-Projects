@@ -3,6 +3,7 @@ const addBtn = document.getElementById('button')
 const todo = document.getElementById('todo')
 const sort = document.getElementById('sort')
 
+// function to add Note
 function addNote() {
     if (input.value == '') {
         window.alert("Please enter a valid note!!")
@@ -85,8 +86,10 @@ function addNote() {
     }
 }
 
+// this is used to focus everytime page reloads
 input.focus()
 
+// function to sort note
 function sortNote() {
     var items = todo.childNodes;
     var itemsArr = [];
@@ -105,6 +108,7 @@ function sortNote() {
     }
 }
 
+// function to clear Note
 function clearNote() {
     todo.innerHTML = '' 
 }

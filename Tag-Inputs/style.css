@@ -1,0 +1,66 @@
+/* CSS Resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* heading */
+#h-primary {
+    text-align: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, red, blue);
+}
+
+/* body section */
+body {
+    background-color: black;
+}
+
+/* main container */
+
+.container {
+    width: 60%;
+    margin: 2rem auto;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+}
+
+.tag-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.tag-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tag-content pre {
+    font-size: 1.2rem;
+    position: relative;
+    bottom: 2px;
+    right: -2px;
+    cursor: pointer;
+}
+
+.tag-container .tag {
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+.tag-container input {
+    flex: 1;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    outline: none;
+}

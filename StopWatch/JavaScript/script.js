@@ -5,11 +5,13 @@ let s = 0
 let m = 0
 let h = 0
 
+/* function to start stopwatch */
 function start(flag) {
     if(flag) {
         startButton.disabled = true;
     }
 
+    /* Using setTimeout function */
     timeoutId = setTimeout(function() {
         s = parseInt(s)
         m = parseInt(m)

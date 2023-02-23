@@ -130,7 +130,7 @@ function myFunc() {
 
 let flag = 1;
 
-// this works as both players turn one by one.
+// this works as players turn one by one.
 function myfunc_2() {
     if (flag == 1) {
         document.getElementById('b1').value = 'X'

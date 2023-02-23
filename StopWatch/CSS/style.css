@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* body section */
 body {
     background-color: black;
     display: flex;
@@ -14,6 +15,7 @@ body {
     height: 100vh;
 }
 
+/* main container */
 .container {
     display: flex;
     flex-direction: column;
@@ -49,6 +51,8 @@ button {
 #stopwatch{
     font-size: 3rem;
 }
+
+/* Media queries */
 
 @media screen and (max-width: 600px) {
     #h-primary {
